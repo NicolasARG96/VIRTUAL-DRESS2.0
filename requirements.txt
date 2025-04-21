@@ -2,7 +2,7 @@
 accelerate
 diffusers
 invisible_watermark
-torch==2.0.1+cpu
+torch==2.0.1
 transformers
 xformers
 opencv-python
