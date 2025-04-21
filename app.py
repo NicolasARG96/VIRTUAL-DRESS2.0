@@ -261,3 +261,7 @@ with gr.Blocks(css=css) as Tryon:
 # ip = requests.get('http://ifconfig.me/ip', timeout=1).text.strip()
 # print("ip address", ip)
 Tryon.launch()
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 7860))  # Usa el puerto asignado por Heroku, o 7860 en local
+    Tryon.launch(server_name="0.0.0.0", server_port=port)
+
